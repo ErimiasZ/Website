@@ -1,0 +1,111 @@
+
+div {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 24px;
+    padding: 5px;
+    background-color: black;
+}
+
+main {
+    color: white;
+    padding: 10px;
+    background-color: black;
+    border-style: dotted;
+    margin: 30px;
+}
+
+h3 {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    background-color: black;
+    padding: 5px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+img {
+    width: 60px;
+}
+
+body {
+    background-color: gray;
+    padding: 1px;
+    display: center;
+    margin: 0px;
+}
+
+.items:hover {
+    background-color: rgba(21, 21, 86, 0.874);
+    opacity: 2;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pic_container {
+    width: 95%;
+    margin: 20px;
+    padding: 25px;
+    border-left: 1px solid #B1D7FE;
+    border-right: 1px solid #B1D7FE;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    transition: border 500ms;
+    display: flex;
+    justify-content: space-around;
+}
+.card img {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures image takes full width of its container */
+    border-radius: 8px; /* Optional: Rounded corners for images */
+}
+.card {
+    width: 20%; 
+    text-align: center; 
+    padding: 15px; 
+    margin: 10px; 
+    border: 1px solid #B1D7FE; 
+}
+
+.card:hover {
+    border-top: 1px solid #B1D7FE;
+    border-bottom: 1px solid #B1D7FE;
+}
+
+@media (max-width: 1030px) {
+    h1 {
+        background-color: red;
+    }
+    p {
+        font-size: 100%;
+    }
+    .pic_container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 50%;
+    }
+}
+
+@media (max-width: 530px) {
+    h1 {
+        background-color: blue;
+    }
+    p {
+        font-size: 150%;
+    }
+    .card {
+        width: 80%;
+    }
+}
